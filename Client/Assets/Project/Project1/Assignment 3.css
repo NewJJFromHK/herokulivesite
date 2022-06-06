@@ -1,0 +1,88 @@
+.logo > .logo-image {
+
+width: 150px;
+float:left;
+padding: 5px;
+
+}
+
+.Banner> .Banner-image{
+    width: 600px;
+    float:initial;
+    
+
+}
+
+.Banner> .Banner-image::after{
+    content:"";
+    display:table;
+    clear: both;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.link{
+    font-size: 1.5em;
+    
+}
+
+.HomePage{
+    float: right;
+}
+
+h2{
+    text-indent: 50px;
+}
+
+p{
+    padding-left: 370px;
+    font-size: 20px;
+}
+.ull{
+    padding-left: 368px; 
+    font-size: 18px;
+}
+h3{
+    text-indent: 368px;
+}
+h4{
+    font-size: 2em;
+    color: red;
+}
+thead{
+    background-color:#D7F1BC
+}
+#version {
+    width: 975px;
+    margin-left: auto;
+    margin-right:auto;
+}
+td{
+    vertical-align: top;
+}
+h5{
+    text-indent: 27px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.price{
+    color: purple;
+    font-size: 20px;
+}
+th{
+    color: black;
+}
+.oddRow{
+    background-color: coral;
+}
+.evenRow{
+    background-color: rgb(3, 192, 44);
+}
+ul{
+    list-style-image: url('aball.gif');
+}

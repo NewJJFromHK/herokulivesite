@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created by: Kin Fung Lee 301194080 - Created on: 11/12/21-->
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title> Kin FUng Lee - COMP 213 Individual Project</title>
+    <meta content="Public Website, Individual Project, web design, COMP213" name="keywords">
+    <meta content="Individual Project - Create a public website for a local real estate agent"name="description">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link href="Project.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="allPage">
+        <header>
+            <h1>Salerno Realty Inc.</h1>
+        </header>
+        <nav>
+            <ul>
+                <li id="page"><a href="Project.html">Home</a></li>
+                <li><a href="Listings.html">Active Listings</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2>Contact us for your Dream House</h2>
+        <form action="mailto:mark@salernorealty.ca" method="post">
+            <table style="width: 100%;">
+            <tr>
+                <td class="fieldLabel">
+                    First Name:
+                </td>
+                <td>
+                    <input type="text" name="txtFirstName" size="25" tabindex="1" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Last Name:
+                </td>
+                <td>
+                    <input type="text" name="txtLastName" size="25" tabindex="3" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Phone:
+                </td>
+                <td>
+                    <input type="tel" name="txttel" size="10" tabindex="5">
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Email:
+                </td>
+                <td>
+                    <input type="text" name="txtEmail" size="30" tabindex="7" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Type of property:
+                </td>
+                <td>
+                    <input type="checkbox" name="Condo" value="Condor" tabindex="9">Condo
+                    <input type="checkbox" name="Detached" value="Detached" tabindex="11">Detached
+                    <input type="checkbox" name="Semi-Detached" value="semi" tabindex="13">Semi-Detached
+                    <input type="checkbox" name="Townhouse" value="TH" tabindex="15">Townhouse
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Number of Bedrooms:
+                </td>
+                <td>
+                    <input type="text" name="txtbed" size="2" tabindex="17">
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Number of Bathrooms:
+                </td>
+                <td>
+                    <input type="text" name="txtBath" size="2" tabindex="19">
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Price range:
+                </td>
+                <td>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="50000000" value="1000000" class="slider" id="Price" tabindex="21">
+                        <p>Value: <span id="demo"></span></p>
+                      </div>
+                      <script>
+                      var slider = document.getElementById("Price");
+                      var output = document.getElementById("demo");
+                      output.innerHTML = slider.value;
+                      
+                      slider.oninput = function() {
+                        output.innerHTML = this.value;
+                      }
+                      </script> 
+                </td>    
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    Message:
+                </td>
+                <td>
+                    <textarea name="txtMessage" cols="50" rows="7" tabindex="23"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="button">
+                    <input type="submit" name="btnSubmit" value="Send" tabindex="25">
+                </td>
+                <td class="button">
+                    <input type="reset" name="btnReset" value="Reset" tabindex="27">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </main>
+    <aside>
+        <figure>
+            <img src="RealEstateAgent.jpg" width="300" height="300" alt=" Real Estate Agent">
+            <br> Tel: +1 416-460-2118 Ext. 201
+            <br><br> Email: <a href="mailto:mark@salernorealty.ca">mark@salernorealty.ca</a>
+        </figure>
+    </aside>
+    <footer>
+        <p id="copyright">&copy;&nbsp;&nbsp;
+            Copyright Kin Fung Lee 301194080 - COMP 213 Fall 2021 Individual Assignment
+        </p>
+    </footer>
+    </div>
+</body>
+</html>

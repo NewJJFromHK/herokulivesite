@@ -1,0 +1,40 @@
+<div class="container">
+    <h1><%= title %></h1><br>
+    <h2>Address:</h2>
+    <p>941 Progress Ave, Scarborough, ON M1G 3T8</p>
+
+    <h2>Call</h2>
+    <p>416-289-5000</p>
+
+    <h2>Email</h2>
+    <p>cae@centennialcollege.ca</p>
+
+    <h2>Send us message</h2>
+    <form action = "mailto:klee269@my.centennialcollege.ca" method="post">
+        <div class="mb-3">
+            <label for="FName" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="FName">
+          </div>
+          <div class="mb-3">
+            <label for="LName" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="LName">
+          </div>
+          <div class="mb-3">
+            <label for="Contact" class="form-label">Contact Number:</label>
+            <input type="number" class="form-control" id="Contact">
+          </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="Msg" class="form-label">Message:</label>
+            <textarea class="form-control" id="Msg" rows="3"></textarea>
+          </div>
+          <div id="submit">
+            <input id="submitBtn" type="button" value="Register Now"/>
+            <input id="clearBtn" type="button" value="Clear Form"/>
+          <br><br><br>
+
+    </form>
+</div>
